@@ -35,7 +35,6 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
                 android:layout_marginEnd="15dp"/>
-
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -113,10 +112,6 @@
                     android:textColor="@android:color/white" />
 
             </LinearLayout>
-
         </LinearLayout>
-
     </RelativeLayout>
-
-
 </layout>

@@ -30,7 +30,7 @@ class settingFragment : Fragment() {
             Voice("아라(여자)", "nmeow", 1),
             Voice("유나(여자)", "vyuna", 2),
             Voice("지훈(남자)", "nwoof", 3),
-            Voice("동현(남자)", "vdonghyun", 4),
+            Voice("동현(남자)", "njihun", 4),
             Voice("혜리(여자)", "vhyeri", 5),
             Voice("정주(실제 남자)", "Speaker 6", 6)
         )
