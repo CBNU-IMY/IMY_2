@@ -78,6 +78,9 @@ class chatFragment : Fragment() {
     private lateinit var app: App
     private lateinit var datastore: DataStoreModule
 
+    private val messageString = arrayOf<String>("한 번 산책이라도 가보시는건 어떤가요?? 불안이 해소될거에요!!","해소가 안되더라도 기력을 다시 되찾을거에요! 저만 믿어보세요!","저의 일인걸요! 언제나 곁에서 응원할게요!")
+    private var messageCount: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -471,6 +474,9 @@ class chatFragment : Fragment() {
                 val endTime = System.currentTimeMillis()
                 val duration = endTime - startTime
                 Log.v("응답 속도", "${duration}")
+
+                //chatresponse = messageString[messageCount]
+                //messageCount++
 
                 chatresponse= res!!.answer
             }.getOrDefault(false)
