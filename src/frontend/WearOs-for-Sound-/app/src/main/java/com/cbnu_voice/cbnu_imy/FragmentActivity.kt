@@ -83,8 +83,10 @@ class FragmentActivity : AppCompatActivity(), CoroutineScope by MainScope(),
 
         sharedViewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
-        /*sharedViewModel.bpmCount.observe(this) {
-            if (sharedViewModel.bpmCount.value == 5) {
+        var isAlert = false
+
+        sharedViewModel.bpmCount.observe(this) {
+            if (sharedViewModel.bpmCount.value == 5 && !isAlert) {
                 AlertDialog.Builder(this)
                     .setTitle("잠깐 운동중이신가요??")
                     .setMessage("저와 이야기를 나누고 싶으면 말씀하세요!")
@@ -94,9 +96,9 @@ class FragmentActivity : AppCompatActivity(), CoroutineScope by MainScope(),
                     ) { _, _ -> }
                     .create()
                     .show()
-
+                    isAlert = true
             }
-        }*/
+        }
 
     }
 

@@ -54,7 +54,7 @@ class MainViewModel : ViewModel() {
             _bpmCount.value = _bpmCount.value!! + count
             _dataList.add(data.value!!.toInt())
             Log.d("bpmCount", bpmCount.value.toString())
-        } else{
+        } else {
             currentTime()
             viewModelScope.launch(Dispatchers.IO) {
                 calculateAverage()
